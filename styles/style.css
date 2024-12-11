@@ -1,0 +1,75 @@
+/* GENERALES */
+html {
+    font-size: 16px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+#cabecera {
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem /* Este funciona en función del tamaño de fuente base de la raíz (HTML)*/;
+}
+
+#cabecera img {
+    width: 100%;
+    max-width: 80px;
+}
+
+/* NOTICIAS */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid gray;
+    padding: 1rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p {
+    line-height: 1.4em;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+    #cabecera {
+        background-color:red;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    #cabecera {
+        background-color:yellow;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 60%;
+    }
+
+    .card p {
+        font-size: 2rem;
+    }
+
+}
